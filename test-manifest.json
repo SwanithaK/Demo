@@ -1,1 +1,1 @@
-TEST_MODE="https://github.com/SwanithaK/Demo/blob/main/test-manifest.json"
+{"base_url": "https://github.com/SwanithaK/Demo/blob/main/", "tests": ["/L1/Background/BackgroundSkyBox.yaml"]}

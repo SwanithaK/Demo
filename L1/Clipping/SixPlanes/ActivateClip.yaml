@@ -12,7 +12,7 @@ calls:
     input:
       - model:
           - Refining
-          - https://argo.hexagonppm.com/graphicsamples/refining/
+          - http://localhost/models/Refining/
           - parametrics
           - file
           - configuration:

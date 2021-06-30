@@ -51,8 +51,8 @@ calls:
     validation:      
       - command: GetSelection
         expected: []
-      - command: GetHiddenObjects
-        expected: {"UtilityTestModel":{"Hidden":[],"Isolated":[35,59]}}
+#       - command: GetHiddenObjects
+#         expected: {"UtilityTestModel":{"Hidden":[],"Isolated":[35,59]}}
   # Stop/Deactivate Isolate before going to next testcase
   - command: MCDStopCommand
     input:

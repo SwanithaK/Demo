@@ -53,9 +53,9 @@ calls:
         expected: []
 #       - command: GetHiddenObjects
 #         expected: {"UtilityTestModel":{"Hidden":[],"Isolated":[35,59]}}
-#   # Stop/Deactivate Isolate before going to next testcase
+  # Stop/Deactivate Isolate before going to next testcase
   - command: MCDStopCommand
-#     input:
-#       commandName: isolate
-#       commandArgs:
-#         immediate: true
+    input:
+      commandName: isolate
+      commandArgs:
+        immediate: true

@@ -44,18 +44,18 @@ calls:
       - command: GetIsolateEnabledStatus
         expected: true   
   # Isolate selected objects
-  - command: MCDStartCommand
-    input:
-      commandName: isolate    
-    #Check for isolated object ids and selected ids
-    validation:      
-      - command: GetSelection
-        expected: []
-      - command: GetHiddenObjects
-        expected: {"UtilityTestModel":{"Hidden":[],"Isolated":[35,59]}}
-  # Stop/Deactivate Isolate before going to next testcase
-  - command: MCDStopCommand
-    input:
-      commandName: isolate
-      commandArgs:
-        immediate: true
+#   - command: MCDStartCommand
+#     input:
+#       commandName: isolate    
+#     #Check for isolated object ids and selected ids
+#     validation:      
+#       - command: GetSelection
+#         expected: []
+#       - command: GetHiddenObjects
+#         expected: {"UtilityTestModel":{"Hidden":[],"Isolated":[35,59]}}
+#   # Stop/Deactivate Isolate before going to next testcase
+#   - command: MCDStopCommand
+#     input:
+#       commandName: isolate
+#       commandArgs:
+#         immediate: true

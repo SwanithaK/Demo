@@ -13,7 +13,7 @@ calls:
   input:
     - model:
       - UtilityTestModel
-      - http://localhost/models/Refining/
+      - https://argo.hexagonppm.com/graphicsamples/utility/
       - parametrics
       - file
 #Set background color to blue

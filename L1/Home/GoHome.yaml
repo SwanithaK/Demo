@@ -14,17 +14,17 @@ calls:
       - https://argo.hexagonppm.com/graphicsamples/utility/
       - parametrics
       - file
-- command: MCDFit
-# Navigate somewhere
-- command: MCDMove
-  input:
-    - 187
-    - 10
-    - 10
-    - 100
-    - 100
+# - command: MCDFit
+# # Navigate somewhere
+# - command: MCDMove
+#   input:
+#     - 187
+#     - 10
+#     - 10
+#     - 100
+#     - 100
 # Test Home command
-# - command: MCDGoHome
+- command: MCDGoHome
   validation:
   - command: GetCameraPosition
     expected: {"CameraPosition":{"center":{"x":2990.76,"y":2403.82,"z":70.93},"clip-far":200.00,"clip-near":15.01,"perspective":56.00,"up":{"x":-0.37,"y":0.40,"z":0.84}}}

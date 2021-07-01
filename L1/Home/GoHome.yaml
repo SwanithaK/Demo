@@ -14,7 +14,7 @@ calls:
       - https://argo.hexagonppm.com/graphicsamples/utility/
       - parametrics
       - file
-- command: MCDFit
+# - command: MCDFit
 # Navigate somewhere
 - command: MCDMove
   input:

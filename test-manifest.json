@@ -1,2 +1,2 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests": ["/L1/Fit/BatchSelectFitDeselect.yaml", "/L1/Fit/BatchSelectFitDeselectBig.yaml", "/L1/Fit/DISABLED_FitTo2DModel.yaml", "/L1/Fit/FitTo2DObject.yaml", "/L1/Fit/FitToModel.yaml", "/L1/Fit/FitToMultiple.yaml", "/L1/Fit/FitToMultiple2D.yaml", "/L1/Fit/FitToMultipleDeselectReselect.yaml", "/L1/Fit/FitToObject.yaml", "/L1/Fit/FitToObjectsLookedUp.yaml", "/L1/Fit/FitToObjectWithOutlineON.yaml", "/L1/Fit/PipingFilterBatch.yaml", "/L1/Fit/PipingFilterLookup.yaml", "/L1/Fit/PipingFilterLookupEdit.yaml", "/L1/Fit/SelectionWithOutRange.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests": ["/L1/Materials/AccentManagerInitManualDefineAndApply.yaml"]}
 

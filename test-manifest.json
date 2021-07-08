@@ -1,2 +1,2 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests": ["/L1/Snapshot/SnapshotTransparency.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests": ["/L1/Snapshot/Snapshot2D.yaml", "/L1/Snapshot/SnapshotAmbientOcclusion.yaml", "/L1/Snapshot/SnapshotAntiAlias.yaml", "/L1/Snapshot/SnapshotBackground.yaml", "/L1/Snapshot/SnapshotClipping.yaml", "/L1/Snapshot/SnapshotEvent.yaml", "/L1/Snapshot/SnapshotHSPC.yaml", "/L1/Snapshot/SnapshotIsolate.yaml", "/L1/Snapshot/SnapshotMaterial.yaml", "/L1/Snapshot/SnapshotOutline.yaml", "/L1/Snapshot/SnapshotParametrics.yaml", "/L1/Snapshot/SnapshotParametricsFitToObject.yaml", "/L1/Snapshot/SnapshotParametricsMultipleTimes.yaml", "/L1/Snapshot/SnapshotTransparency.yaml"]}
 

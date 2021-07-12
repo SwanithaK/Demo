@@ -14,7 +14,8 @@ calls:
       - https://argo.hexagonppm.com/graphicsamples/refining/
       - parametrics
       - file
-- wait
+- wait: 
+    continue_on_failure: true
 - command: MCDToggleFlyTo
   input:
   - true

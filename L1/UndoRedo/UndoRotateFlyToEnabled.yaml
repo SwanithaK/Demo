@@ -14,9 +14,6 @@ calls:
       - https://argo.hexagonppm.com/graphicsamples/refining/
       - parametrics
       - file
-- wait_for:
-    timeout: 300
-    msg: model loaded failed
 - command: MCDToggleFlyTo
   input:
   - true

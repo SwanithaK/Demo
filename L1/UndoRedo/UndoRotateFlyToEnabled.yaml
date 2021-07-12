@@ -15,7 +15,7 @@ calls:
       - parametrics
       - file
 - wait: 
-    continue_on_failure: true
+    continue_on_failure: false
 - command: MCDToggleFlyTo
   input:
   - true

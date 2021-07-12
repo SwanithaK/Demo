@@ -18,7 +18,7 @@ calls:
           - file
     validation:
     - command: GetCameraPosition
-      expected: {"CameraPosition":{"center":{"x":2990.759765625,"y":2403.8203125,"z":70.9315414428711},"clip-far":200,"clip-near":15.008632490395845,"perspective":56,"up":{"x":-0.36829099380970703,"y":0.3953331830305764,"z":0.8414709848078965}}}
+      expected: {"CameraPosition":{"center":{"x":2990.759765625,"y":2403.8203125,"z":70.9315414428711},"clip-far":200,"clip-near":33.35,"perspective":56,"up":{"x":-0.36829099380970703,"y":0.3953331830305764,"z":0.8414709848078965}}}
       precision: 2
   # Select one object
   - command: MCDSelect
@@ -57,7 +57,7 @@ calls:
     # Validate by getting camera position and isolated object ids
     validation:
       - command: GetHomePosition
-        expected: {"CameraHomePosition":{"center":{"x":2990.759765625,"y":2403.8203125,"z":70.931541442871094},"clip-far":200.0,"clip-near":15.008632490395845,"perspective":56.0,"up":{"x":-0.36829099380970703,"y":0.39533318303057641,"z":0.8414709848078965}}}
+        expected: {"CameraHomePosition":{"center":{"x":2990.759765625,"y":2403.8203125,"z":70.931541442871094},"clip-far":200.0,"clip-near":33.35,"perspective":56.0,"up":{"x":-0.36829099380970703,"y":0.39533318303057641,"z":0.8414709848078965}}}
         precision: 2
       - command: GetHiddenObjects
         expected: {"UtilityTestModel":{"Hidden":[],"Isolated":[]}}

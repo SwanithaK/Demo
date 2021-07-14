@@ -1,0 +1,41 @@
+# Author: Dasu Yamala
+# Created: 03-Aug-2020
+# L1 test for validating getsheets,getactivesheet and setactivesheet APIs.
+settings:
+  name: SheetAPIs
+  description: This file is to check getsheets,getactivesheet and setactivesheet APIs.
+  classname: L1
+  suite: Sheets
+  file: 2DSheetAPIs.yaml
+  exclusions:
+    - android
+    - ios
+calls:
+# Load 2D Drawing
+  - command: GVCLoadModel
+    input:
+      - model:
+        - 2DTestDrawing
+        - https://radixcserver2.ingrnet.com:9085/2DWebAPI/V1/Projects('ProjectC')/Drawings('Turbine.igr')/
+        - Edges
+        - web-api
+        - configuration:
+            CameraHeading: top
+            CameraProjection: orthographic
+            CameraLocks: [pitch, yaw]
+            BackgroundColor: [1,1,1,1]
+            Timeout: 70
+    validation:
+      # Test getsheets and getactivesheet command
+      - command: GetSheets
+        expected: ["Sheet1", "Sheet2"]
+      - command: GetActiveSheet
+        expected: "Sheet1"
+  # Test mcdsetactivesheet command          
+  - command: MCDSetActiveSheet
+    input:
+    - sheetName : "Sheet2"
+    validation:
+      # Test getactivesheet command
+      - command: GetActiveSheet
+        expected: "Sheet2"

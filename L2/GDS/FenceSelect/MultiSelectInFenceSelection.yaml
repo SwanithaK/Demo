@@ -1,0 +1,44 @@
+# MultiSelectInFenceSelection test
+# This test is to ensure Multi Select state stays on when entering Fence Selection
+settings:
+  name: MultiSelectInFenceSelection
+  description: "MultiSelectInFenceSelection test"
+  classname: L1
+  suite: FenceSelectionTests
+  file: MultiSelectInFenceSelection.yaml
+  exclusions:
+    - gds
+    - android
+    - ios
+calls:
+- command: GVCLoadModel
+  input:
+    - model:
+      - SDXQADemoGDS
+      - https://yetis-evidence.ingrnet.com:22419/vds/3d/gds/v1/Plants('SDX1606')/Queries('_DEBUG_Whole')/myVR(Aspect=0,Device=0)
+      - parametrics
+      - web-api
+- command: ToggleMultiSelect
+  input:
+    - true 
+  validation:
+    - command: GetMultiSelectGVC
+      expected: true 
+- command: ToggleFenceSelect
+  input:
+    - true
+  validation:
+    - command: GetMultiSelectFenceSelect
+      expected: true
+- command: ToggleMultiSelect
+  input:
+    - false
+  validation: 
+    - command: GetMultiSelectFenceSelect
+      expected: false
+- command: ToggleFenceSelect
+  input:
+    - false
+  validation: 
+    - command: GetMultiSelectGVC
+      expected: false

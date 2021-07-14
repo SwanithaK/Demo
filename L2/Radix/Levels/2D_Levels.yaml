@@ -1,0 +1,45 @@
+# Author: Kishore vangapandu
+# Created: 18-Aug-2020
+# Tests levels apis like get level names and get/set level visibility
+settings:
+  name: 2D_Levels
+  description: verifies the level names and level visibility in the 2d drawing.
+  classname: L1
+  suite: Levels
+  file: 2D_Levels.yaml
+  exclusions:
+    - android
+    - ios
+calls:
+  # Load 2D Drawing
+  - command: GVCLoadModel
+    input:
+      - model:
+        - 2DTestDrawing
+        - https://radixcserver2.ingrnet.com:9085/2DWebAPI/V1/Projects('ProjectC')/Drawings('1011-ENG-PID-M-0001.pid')/
+        - Edges
+        - web-api
+        - configuration:
+            CameraHeading: top
+            CameraProjection: orthographic
+            CameraLocks: [pitch, yaw]
+            BackgroundColor: [1,1,1,1]
+            Timeout: 70
+            
+   # Test "getlevelnames" command
+    validation:
+    - command: GetLevelNames
+      input:
+        - sheetName : Sheet1
+      expected: ["ClaimedOnlyByOthers","ConsistencyChecks","Default","DrawingBorder","HeatTrace","HeatTrace","Hidden","HiddenObjects","Label","Labels","Notes","WaterMark"]
+      
+  # Test "mcdsetlevelvisibility" command and validate using "getlevelvisibility" command
+  - command: MCDSetLevelVisibility
+    input:
+      levelName: Labels
+      visibility: false
+    validation:
+    - command: GetLevelVisibility
+      input:
+        - levelName: Labels
+      expected: false

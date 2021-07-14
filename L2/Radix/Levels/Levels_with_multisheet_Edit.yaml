@@ -1,0 +1,60 @@
+# Author: Kishore vangapandu
+# Edited on 5/3/21 by Charles Sutton - changed model file to accomodate test map
+# Created: 18-Aug-2020
+# Tests levels apis like get level names and get/set level visibility in a multi sheet drawing
+settings:
+  name: 2D_Levels_with_multisheet
+  description: verifies the level names and level visibility in the multi sheet 2d drawing.
+  classname: L2
+  suite: Levels
+  file: 2D_Levels_with_multisheet_Edit.yaml
+calls:
+  # Load 2D Drawing
+  - command: GVCLoadModel
+    input:
+      - model:
+        - 2DTestDrawing
+        - https://radixcserver2.ingrnet.com:9085/2DWebAPI/V1/Projects('ProjectC')/Drawings('Turbine.igr')/
+        - Edges
+        - web-api
+        - configuration:
+            CameraHeading: top
+            CameraProjection: orthographic
+            CameraLocks: [pitch, yaw]
+            BackgroundColor: [1,1,1,1]
+            Timeout: 70
+            
+  # set "labels" level visibility to false
+  - command: MCDSetLevelVisibility
+    input:
+      levelName: Default
+      visibility: false
+    validation:
+    - command: GetLevelVisibility
+      input:
+        - levelName: Default
+      expected: false
+      
+   # change the active sheet      
+  - command: MCDSetActiveSheet
+    input:
+    - sheetName : Sheet2 
+    
+   # validate whether level names are fetched as per the new active sheet    
+    validation:
+    - command: GetLevelNames
+      input:
+        - sheetName : Sheet2
+      expected: ["Default"]
+      
+   # Navigate to the previous active sheet     
+  - command: MCDSetActiveSheet
+    input:
+    - sheetName : Sheet1
+    
+   # validate whether "labels" level visibility is still false or not
+    validation:
+    - command: GetLevelVisibility
+      input:
+        - levelName: Default
+      expected: false

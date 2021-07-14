@@ -1,0 +1,39 @@
+# PauseFenceSelection test
+# This test verifies Fence Selection will pause when other commands are started
+settings:
+  name: PauseFenceSelection
+  description: "PauseFenceSelection test"
+  classname: L1
+  suite: FenceSelectionTests
+  file: PauseFenceSelection.yaml
+  exclusions:
+    - gds
+    - android
+    - ios
+calls:
+- command: GVCLoadModel
+  input:
+    - model:
+      - SDXQADemoGDS
+      - https://yetis-evidence.ingrnet.com:22419/vds/3d/gds/v1/Plants('SDX1606')/Queries('_DEBUG_Whole')/myVR(Aspect=0,Device=0)
+      - parametrics
+      - web-api
+
+- command: ToggleFenceSelect
+  input:
+    - true
+  validation:
+    - command: GetFenceSelectActive
+      expected: true
+- command: ToggleMeasure
+  input:
+    - true
+  validation:
+    - command: GetFenceSelectActive
+      expected: false
+- command: ToggleMeasure # Turn off commands for future tests
+  input:
+    - false
+- command: ToggleFenceSelect
+  input:
+    - false

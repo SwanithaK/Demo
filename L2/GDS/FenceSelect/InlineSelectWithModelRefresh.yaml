@@ -1,0 +1,51 @@
+# Author: Ajay Nagar
+# Revised: 06/08/2021
+# InlineSelectWithModelRefresh test
+# L1 test to ensure that the whenever model gets reloaded the fence select should reset its settings.
+settings:
+  name: InlineSelectWithModelRefresh
+  description: "Reset fence settings on model reload"
+  classname: L1
+  suite: FenceSelectionTests
+  file: InlineSelectWithModelRefresh.yaml
+  exclusions:
+    - gds
+    - android
+    - ios
+    - desktop
+calls:
+- command: GVCLoadModel
+  input:
+    - model:
+      - SDXQADemoGDS
+      - https://yetis-evidence.ingrnet.com:22419/vds/3d/gds/v1/Plants('SDX1606')/Queries('_DEBUG_Whole')/myVR(Aspect=0,Device=0)
+      - parametrics
+      - web-api
+- command: ToggleFenceSelect
+  input:
+    - true
+  validation:
+    - command: GetFenceSelectMode
+      expected: inside
+- command: ToggleFenceSelectMode
+  validation:
+    - command: GetFenceSelectMode
+      expected: overlap
+
+#Reload the Model and check for inside 
+- command: GVCLoadModel
+  input:
+    - model:
+      - SDXQADemoGDS
+      - https://yetis-evidence.ingrnet.com:22419/vds/3d/gds/v1/Plants('SDX1606')/Queries('_DEBUG_Whole')/myVR(Aspect=0,Device=0)
+      - parametrics
+      - web-api
+- command: ToggleFenceSelect
+  input:
+    - true
+  validation:
+    - command: GetFenceSelectMode
+      expected: inside
+- command: ToggleFenceSelect # Turn off command for future tests
+  input:
+    - false

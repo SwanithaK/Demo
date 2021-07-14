@@ -1,0 +1,68 @@
+# Author: Ken Houser
+# Revised: 08/18/2020
+# L1 test fit to lookupby 
+settings:
+  name: LookUpByIdFitGDS
+  description: "Testing Fit to object via lookupby GDS command"
+  classname: L1
+  suite: Fit
+  file: LookUpByIdFitGDS.yaml
+  exclusions:
+    - gds
+    - ios
+    - web
+calls:
+- command: GVCLoadModel
+  input:
+    - model:
+        - SDXQADemoGDS
+        - https://yetis-evidence.ingrnet.com:22419/vds/3d/gds/v1/Plants('SDX1606')/Queries('_DEBUG_Whole')/myVR(Aspect=0,Device=0)
+        - parametrics
+        - web-api
+        - configuration:
+            Selections:
+              - select:
+                  id: 2620
+- command: MCDGoHome
+- command: MCDFit
+  validation:
+    - command: getSelection
+      expected: [2620]
+      precision: 2
+# Select one more object
+- command: MCDSelect
+  input:
+    - 2612
+    - true
+    - mcdrange:
+        - 43.633278
+        - 140.033279
+        - 8.104
+        - 46.986721
+        - 142.886719
+        - 8.107176
+- command: MCDGoHome
+- command: MCDFit
+  validation:
+    - command: getSelection
+      expected: [2612, 2620]
+      precision: 2
+# Select 4 more 2 by id and 2 by name 
+- command: lookUpBy
+  input:
+    - select:
+        ids: [2628,2602]
+    - select:
+        names: ["{8f4974a6-6dbe-44c0-bbec-429f1e605a97}", "{b6958b88-f1b9-4848-b8c2-5af10b9bb52e}"]
+- command: MCDGoHome
+- command: MCDFit
+  validation:
+    - command: getSelection
+      expected: [2602, 2607, 2612, 2620, 2628, 2630]
+      precision: 2
+# Test
+- command: MCDFit
+  validation:
+    - command: GetCameraPosition
+      expected: {"CameraPosition" : {"center" : {"x" : 41.81,"y" : 141.46,"z" : 8.11},"clip-far" : 200.00,"clip-near" : 0.10,"perspective" : 56.00,"up" : {"x" : -0.37,"y" : 0.40,"z" : 0.84}}}
+      precision: 2

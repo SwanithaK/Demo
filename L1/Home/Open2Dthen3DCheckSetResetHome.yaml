@@ -1,0 +1,33 @@
+# Test Set Home and Reset Home command
+settings:
+  name: open2Dthen3DCheckSetResethome
+  description: "Tests opening 2d model then 3d, verifying sethome and resethome status."
+  classname: L1
+  suite: HomeTests
+  file: open2Dthen3DCheckSetResethome.yaml
+calls:
+- command: GVCLoadModel
+  input:
+    - model:
+      - 2DTestDrawing 
+      - https://argo.hexagonppm.com/graphicsamples/2DSamples/demo.bson
+      - Edges
+      - web-api
+      - configuration:
+          CameraHeading: top
+          CameraProjection: orthographic
+          CameraLocks: [pitch, yaw]
+          BackgroundColor: [1,1,1,1]
+- command: GVCLoadModel
+  input:
+    - model:
+        - Refining
+        - https://argo.hexagonppm.com/graphicsamples/utility/
+        - parametrics
+        - file
+# Test Set Home and Reset Home command
+  validation:
+    - command: GetSetHomeLockedState
+      expected: false
+    - command: GetReSetHomeLockedState
+      expected: false

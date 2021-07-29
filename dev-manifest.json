@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/Background/BackgroundSkyBox.yaml","/L1/Background/BackgroundColor.yaml","/L1/Background/BackgroundLock.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/Fit/FitToModel.yaml","/L1/Fit/FitToMultiple.yaml","/L1/Fit/FitToMultipleDeselectReselect.yaml","/L1/Fit/FitToObject.yaml","/L1/Fit/FitToObjectWithOutlineON.yaml","/L1/Fit/SelectionWithOutRange.yaml"]}

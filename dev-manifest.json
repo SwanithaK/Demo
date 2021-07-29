@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/OpenModel/ModelLoadedEvent.yaml","/L1/OpenModel/openModelNoFiltersGiven.yaml","/L1/OpenModel/openOneModelwOneFilter.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/PropertyCard/PropertyCardOnModelLoad.yaml","/L1/PropertyCard/PropertyCardAfterDeselection(MultiSelection).yaml","/L1/PropertyCard/PropertyCardAfterDeselection(SingleSelection).yaml","/L1/PropertyCard/PropertyCardWithIsolate.yaml"]}

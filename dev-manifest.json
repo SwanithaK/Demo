@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/PropertyCard/PropertyCardOnModelLoad.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/PropertyCard/PropertyCardAfterDeselection(MultiSelection).yaml","/L1/PropertyCard/PropertyCardAfterDeselection(SingleSelection).yaml","/L1/PropertyCard/PropertyCardWithIsolate.yaml","/L1/PropertyCard/PropertyCardOnModelLoad.yaml"]}

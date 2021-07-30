@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/ViewAxis/ViewAxisDisable.yaml","/L1/ViewAxis/ViewAxisEnable.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/ZoomArea/ZoomArea.yaml","/L1/ZoomArea/ZoomAreaCrosshairOffsetDOMWEB.yaml"]}

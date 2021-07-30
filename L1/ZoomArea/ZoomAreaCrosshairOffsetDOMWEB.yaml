@@ -9,6 +9,7 @@ settings:
   file: ZoomAreaCrosshairOffsetDOMWEB.yaml
   exclusions:
    - desktop
+   - android
    - ios
 calls:
 - command: GVCLoadModel

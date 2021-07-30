@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/UndoRedo/RedoFitFlyToEnabled.yaml","/L1/UndoRedo/RedoHomeFlyToEnabled.yaml","/L1/UndoRedo/RedoResetHomeFlyToEnabled.yaml","/L1/UndoRedo/RedoRotateFlyToEnabled.yaml","/L1/UndoRedo/RedoRotate.yaml","/L1/UndoRedo/UndoFitFlyToEnabled.yaml","/L1/UndoRedo/UndoHomeFlyToEnabled.yaml","/L1/UndoRedo/UndoRotateFlyToEnabled.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/ViewAxis/ViewAxisDisable.yaml","/L1/ViewAxis/ViewAxisEnable.yaml"]}

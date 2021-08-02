@@ -9,7 +9,6 @@ settings:
   file: openModel3Dthen2D.yaml
   exclusions: # this is optional, you can have web, ios, android, and desktop as possible options
     - ios
-    - android
 calls:
 - command: GVCLoadModel
   input:

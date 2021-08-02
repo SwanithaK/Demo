@@ -7,7 +7,6 @@ settings:
   file: UndoRedoNavigatorCompass.yaml
   exclusions:
     - ios
-    - android
 calls:
 - command: GVCLoadModel
   input:

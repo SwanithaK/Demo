@@ -6,7 +6,6 @@ settings:
   suite: FitTests
   file: FitTo2DModel.yaml
   exclusions:
-    - android
     - web   # To be re-enabled during implementation of TR-PB-244685
     - ios
     - desktop # To be re-enabled during implementation of TR-PB-244685

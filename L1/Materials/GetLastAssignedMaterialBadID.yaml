@@ -5,7 +5,6 @@ settings:
   suite: Materials
   file: GetLastAssignedMaterialBadID.yaml
   exclusions: # optional, may be excluded 
-    - android # don't run this test on android
     - web # don't run this test on web platforms
     - ios # don't run this test on ios
 calls:

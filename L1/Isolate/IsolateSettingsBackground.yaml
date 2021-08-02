@@ -10,7 +10,6 @@ settings:
   exclusions:
     - desktop
     - ios
-    - android
 calls:
   # Load a model
   - command: GVCLoadModel

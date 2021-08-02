@@ -10,7 +10,6 @@ settings:
   exclusions:
     - desktop # Yes, this test is for desktop, but it was always failing in pipeline. Removing for now
     - web
-    - android
     - ios
 calls:
 #Load the small utility area model

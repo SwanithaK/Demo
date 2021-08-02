@@ -8,7 +8,6 @@ settings:
   suite: Clipping
   file: ClipVolumeRange3PlaneTopRight.yaml
   exclusions:
-    - android
     - web
     - ios
 calls:

@@ -9,7 +9,6 @@ settings:
   file: openModelSelectionNames.yaml
   exclusions: # this is optional, you can have web, ios, android, and desktop as possible options
     - ios
-    - android
     - web   # To be re-enabled during implementation of Id map changes in gvc-react.
 calls:
 - command: GVCLoadModel

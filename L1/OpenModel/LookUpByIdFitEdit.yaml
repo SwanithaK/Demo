@@ -8,7 +8,6 @@ settings:
   suite: Fit
   file: LookUpByIdFitEdit.yaml
   exclusions:
-    - android
     - web
     - ios
 calls:

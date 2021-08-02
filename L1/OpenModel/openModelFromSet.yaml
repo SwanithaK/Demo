@@ -5,8 +5,7 @@ settings:
   classname: L1
   suite: Models
   file: OpenModelFromSet.yaml
-  exclusions: 
-    - android 
+  exclusions:  
     - web
     - ios
 calls:

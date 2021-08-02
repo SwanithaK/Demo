@@ -8,7 +8,6 @@ settings:
   suite: FitTests
   file: PipingFilterLookup.yaml
   exclusions:
-    - android
     - web
     - ios
 calls:

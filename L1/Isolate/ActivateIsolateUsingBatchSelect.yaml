@@ -8,7 +8,6 @@ settings:
   suite: Isolate
   file: ActivateIsolateUsingBatchSelect.yaml
   exclusions:
-    - android
     - desktop
     - ios
 calls:

@@ -5,7 +5,6 @@ settings:
   suite: Navigation
   file: moveOutOffScreenLeft.yaml
   exclusions:
-    - android
     - web
     - ios
 calls:

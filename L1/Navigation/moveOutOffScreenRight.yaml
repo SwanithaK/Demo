@@ -5,7 +5,6 @@ settings:
   suite: Navigation
   file: moveOutOffScreenRight.yaml
   exclusions:
-    - android
     - web
     - ios
 calls:

@@ -9,7 +9,6 @@ settings:
   file: SelectionColors.yaml
   exclusions:
     - ios
-    - android
     - web
 calls:
 #Load the small utility area model

@@ -9,7 +9,6 @@ settings:
   file: EffectsEnabled3dContent.yaml
   exclusions:
     - ios
-    - android
 calls:
 - command: GVCLoadModel
   input:

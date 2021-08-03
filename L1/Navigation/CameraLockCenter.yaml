@@ -9,7 +9,6 @@ settings:
    - web       
    - desktop   
    - ios
-   - android
 calls:
 - command: GVCLoadModel
   input:

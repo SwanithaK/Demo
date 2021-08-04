@@ -1,2 +1,2 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/GDS/FenceSelect/EnableFenceSelection.yaml", "/L2/GDS/FenceSelect/InlineSelectWithModelRefresh.yaml", "/L2/GDS/FenceSelect/MultiSelectInFenceSelection.yaml", "/L2/GDS/FenceSelect/PauseFenceSelection.yaml", "/L2/GDS/FenceSelect/ToggleFenceSelectionMode.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/GDS/FenceSelect/EnableFenceSelection.yaml"]}
 

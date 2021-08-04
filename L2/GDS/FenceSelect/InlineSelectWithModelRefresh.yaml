@@ -10,7 +10,6 @@ settings:
   file: InlineSelectWithModelRefresh.yaml
   exclusions:
     - gds
-    - android
     - ios
     - desktop
 calls:

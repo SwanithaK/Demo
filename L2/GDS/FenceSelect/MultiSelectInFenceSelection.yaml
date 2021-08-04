@@ -8,7 +8,6 @@ settings:
   file: MultiSelectInFenceSelection.yaml
   exclusions:
     - gds
-    - android
     - ios
 calls:
 - command: GVCLoadModel

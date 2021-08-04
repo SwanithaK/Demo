@@ -8,7 +8,6 @@ settings:
   file: ToggleFenceSelectionMode.yaml
   exclusions:
     - gds
-    - android
     - ios
 calls:
 - command: GVCLoadModel

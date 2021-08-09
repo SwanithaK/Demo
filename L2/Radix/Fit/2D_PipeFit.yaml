@@ -8,7 +8,6 @@ settings:
   suite: Fit
   file: 2D_PipeFit.yaml
   exclusions:
-    - android
     - web
     - ios
 calls:

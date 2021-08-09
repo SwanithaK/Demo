@@ -1,2 +1,2 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/GDS/FenceSelect/EnableFenceSelection.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/Radix/Fit/2D_FitToMultiple.yaml", "/L2/Radix/Fit/2D_InstrumentFit.yaml", "/L2/Radix/Fit/2D_NozzleFit.yaml", "/L2/Radix/Fit/2D_PipeFit.yaml", "/L2/Radix/Fit/2D_PipingCompFit.yaml", "/L2/Radix/Fit/2D_PumpFit.yaml", "/L2/Radix/Fit/2D_SignalLineFit.yaml", "production/L2/Radix/Fit/2D_TextFit.yaml","/L2/Radix/Fit/2D_VesselFit.yaml","/L2/Radix/Fit/DISABLED_2D_FitDrawing.yaml", "/L2/Radix/Fit/DISABLED_2D_PipingCompFit.yaml"]}
 

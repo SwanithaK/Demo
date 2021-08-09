@@ -8,8 +8,7 @@ settings:
   suite: Fit
   file: 2D_PipingCompFit_Web.yaml
   exclusions:
-    - web       # To be re-enabled during implementation of TR-PB-244685
-    - desktop   # To be re-enabled during implementation of TR-PB-244685
+    - web       # To be re-enabled during implementation of TR-PB-244685  
     - android
     - ios
 calls:

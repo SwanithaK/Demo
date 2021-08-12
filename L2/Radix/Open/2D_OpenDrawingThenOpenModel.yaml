@@ -9,7 +9,6 @@ settings:
   file: 2D_OpenDrawingThenOpenModel.yaml
   exclusions: # this is optional, you can have web, ios, android, and desktop as possible options
     - ios
-    - android
 calls:
 # Load a drawing
 - command: GVCLoadModel

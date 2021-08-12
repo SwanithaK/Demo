@@ -8,7 +8,6 @@ settings:
   suite: ShortCutKeys 
   file: 2D_FitWithShortcutKey.yaml
   exclusions: # keyboard is not usable on mobile
-    - android
     - ios
 calls:
 - command: GVCLoadModel

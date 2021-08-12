@@ -8,7 +8,6 @@ settings:
   suite: Sheets
   file: 2D_Sheets.yaml
   exclusions:
-    - android
     - ios
 calls:
   # Load 2D Drawing

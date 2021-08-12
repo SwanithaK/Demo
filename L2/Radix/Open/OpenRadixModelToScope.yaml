@@ -1,0 +1,32 @@
+# Author: Andy Sutton
+# Revised: 2/23/2021
+# L1 test for opening a 2D model to a sepecific scope
+settings:
+  name: OpenRadixModelToScope
+  description: "Tests opening a demo 2D file to a specific location using the min/max range input."
+  classname: Load2DModel
+  suite: Models
+  file: OpenRadixModelToScope.yaml
+  exclusions:
+    - web #coordinates do not match WPF so validation fails
+    - ios
+calls:
+- command: GVCLoadModel
+  input:
+    - model:
+      - 2DTestDrawing 
+      - https://radixcserver2.ingrnet.com:9085/2DWebAPI/V1/Projects('ProjectC')/Drawings('1011-ENG-PID-M-0001.pid')/
+      - Edges
+      - web-api
+      - configuration:
+          CameraHeading: top
+          CameraProjection: orthographic
+          CameraLocks: [pitch, yaw]
+          BackgroundColor: [1,1,1,1]
+          MinModelRange: [3325.971435546875,2094.794189453125,0] 
+          MaxModelRange: [3660.510498046875,3183.881103515625,0]     
+  validation:
+    - command: getCameraPosition
+      expected: {CameraPosition : {center : {x : 3493.24, y : 2639.34, z : 0},clip-far : 1044.62,clip-near : 1003.65,perspective : 56,up : {x : -0.37,y : 1,z : 0}}}
+      precision: 2 
+      tolerance: 0.5

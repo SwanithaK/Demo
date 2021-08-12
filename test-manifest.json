@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/Levels/DISABLED_2D_Levels.yaml","/L1/Levels/LevelsDataAfterDrawingLoad.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/Navigation/moveOutOffScreenLeft.yaml","/L1/Navigation/moveOutOffScreenRight.yaml"]}

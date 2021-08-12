@@ -9,7 +9,6 @@ settings:
   file: 2D_MoveWithShortcuts.yaml
   exclusions: # keyboard is not usable on mobile
     - web       # To be re-enabled during implementation of TR-PB-244685
-    - android
     - ios
     - desktop # To be re-enabled during implementation of TR-PB-244685
 calls:

@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/Radix/Open/2D_OpenDrawing.yaml", "/L2/Radix/Open/2D_OpenDrawingThenOpenModel.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/Radix/Open/2D_OpenDrawing.yaml", "/L2/Radix/Open/2D_OpenDrawingThenOpenModel.yaml","/L2/Radix/Open/2D_OpenRadixDrawing.yaml","/L2/Radix/Open/OpenRadixModelToScope.yaml"]}

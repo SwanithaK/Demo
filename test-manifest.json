@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/Radix/Render/2D_InstrumentRender.yaml", "/L2/Radix/Render/2D_ModelSwitchVesselRender.yaml", "/L2/Radix/Render/2D_PipeRender.yaml", "/L2/Radix/Render/2D_PipingCompRender.yaml", "/L2/Radix/Render/2D_SmartFrameRender.yaml", "/L2/Radix/Render/2D_TextRender.yaml", "/L2/Radix/Render/2D_VesselRender.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/Radix/Selection/2D_MultipleSelect.yaml","/L2/Radix/Selection/2D_SingleSelect.yaml"]}

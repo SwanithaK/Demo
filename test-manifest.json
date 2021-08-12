@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/Radix/Sheets/2D_Sheets.yaml","/L2/Radix/Sheets/SheetAPIs.yamll"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/Radix/ShortcutKeys/2D_EscapeWithShortcut.yaml", "/L2/Radix/ShortcutKeys/2D_FitWithShortcutKey.yaml", "/L2/Radix/ShortcutKeys/DISABLED_2D_HomeWithShortcut.yaml", "/L2/Radix/ShortcutKeys/DISABLED_2D_MoveWithShortcuts.yaml", "/L2/Radix/ShortcutKeys/DISABLED_2D_ShortcutLimitation.yaml",]}

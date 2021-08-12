@@ -8,7 +8,6 @@ settings:
   suite: Levels
   file: LevelsDataAfterDrawingLoad.yaml
   exclusions:
-    - android
     - ios
 calls:
   # Load a drawing

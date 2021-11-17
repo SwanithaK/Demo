@@ -5,6 +5,9 @@ settings:
   classname: L1
   suite: Navigation
   file: CameraLockYaw.yaml
+  exclusions:
+    - android
+    - ios # To be re-enabled during implementation of DI-PB-246352
 calls:
 - command: GVCLoadModel
   input:

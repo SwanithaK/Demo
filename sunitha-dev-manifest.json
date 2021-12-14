@@ -1,1 +1,1 @@
-{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L2/VOP/files.yaml","/L2/VOP/queries.yaml","/L2/VOP/workspace.yaml"]}
+{"base_url": "https://raw.githubusercontent.com/SwanithaK/Demo/main", "tests":["/L1/Navigation/CameraLockYaw.yaml","/L1/Navigation/FitToModel.yaml","/L1/Navigation/LookNegative.yaml","/L1/Navigation/LookZero.yaml"]}
